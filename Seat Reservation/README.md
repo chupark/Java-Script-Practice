@@ -8,6 +8,7 @@
 좌석예약 자바스크립트를 동작하기 위해 mysql 서버를 준비하고, 다음과 같은 테이블들이 필요합니다.<br>
 ![enter image description here](https://github.com/chupark/Java-Script-Practice/blob/master/Seat%20Reservation/images/1.%20tables.PNG?raw=true)
 <br>5개의 테이블이 있지만 AIRLINEUSER 을 제외한 4개의 테이블만 생성합니다.
+----------
 <br><br>
 ### 2. Go_JEJU 
 Go_JEJU 그리고 Go_KIMPO 는 해당 항공기의 좌석 속성을 나타낸 테이블입니다.
@@ -25,6 +26,7 @@ Go_JEJU 그리고 Go_KIMPO 는 해당 항공기의 좌석 속성을 나타낸 �
 - Go_JEJU 테이블 조회 결과 입니다.
 
 - SEAT CLASS 는 좌석 클래스 입니다 BUSINESS, ECONOMY 두개가 있습니다. SEAT_CODE 는 '좌석 클래스의 코드' 입니다.<br>1 = first, 　2 = economy, 　3 = business 입니다.
+----------
 <br><br>
 ### 3. PLANEINFO
 
@@ -46,6 +48,7 @@ PLANEINFO 테이블은 비행기 속성을 저장하는 테이블 입니다.
 - SELECT *<br>
 ![enter image description here](https://github.com/chupark/Java-Script-Practice/blob/master/Seat%20Reservation/images/4_1.planeinfo_SELECT.PNG?raw=true)
 <br>테이블 조회 결과는 위와 같습니다.
+----------
 <br><br>
 ### 4. TICKETINFO
 TICKETINFO 테이블은 예약 현황을 보여주는 마스터테이블 입니다.
@@ -68,4 +71,4 @@ JSP 파일 실행시 예약된 좌석이 보고싶다면 MYSQL 내에 INSERT 를
 - SELECT *<br>
 ![enter image description here](https://github.com/chupark/Java-Script-Practice/blob/master/Seat%20Reservation/images/5_1.ticketinfo_SELECT.PNG?raw=true)
 <br>
-	- 쿼리 결과는 위와 같습니다.
+	- 리 결과는 위와 같습니다.

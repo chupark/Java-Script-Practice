@@ -19,6 +19,7 @@ Go_JEJU 그리고 Go_KIMPO 는 해당 항공기의 좌석 속성을 나타낸 �
   	 자바스크립트 동작시  좌석은 A1, A2.. 이런식으로 표시됩니다.
 <br>
 - SELECT * <br>
+
 ![enter image description here](https://github.com/chupark/Java-Script-Practice/blob/master/Seat%20Reservation/images/2_1.Go_JEJU_SELECT.PNG?raw=true)
 
 - Go_JEJU 테이블 조회 결과 입니다.

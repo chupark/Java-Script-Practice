@@ -20,6 +20,7 @@ Go_JEJU 그리고 Go_KIMPO 는 해당 항공기의 좌석 속성을 나타낸 �
 <br>
 - SELECT * <br>
 ![enter image description here](https://github.com/chupark/Java-Script-Practice/blob/master/Seat%20Reservation/images/2_1.Go_JEJU_SELECT.PNG?raw=true)
+
 - Go_JEJU 테이블 조회 결과 입니다.
 
 - SEAT CLASS 는 좌석 클래스 입니다 BUSINESS, ECONOMY 두개가 있습니다. SEAT_CODE 는 '좌석 클래스의 코드' 입니다.<br>1 = first, 　2 = economy, 　3 = business 입니다.

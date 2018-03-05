@@ -71,4 +71,4 @@ JSP 파일 실행시 예약된 좌석이 보고싶다면 MYSQL 내에 INSERT 를
 - SELECT *<br>
 ![enter image description here](https://github.com/chupark/Java-Script-Practice/blob/master/Seat%20Reservation/images/5_1.ticketinfo_SELECT.PNG?raw=true)
 <br>
-	- 리 결과는 위와 같습니다.
+	- 쿼리 결과는 위와 같습니다.

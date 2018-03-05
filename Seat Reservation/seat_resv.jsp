@@ -377,7 +377,7 @@ Connection conn = null;
 Statement stmt = null;
 ResultSet rset = null;
 String sql = "";
-
+total_person = 4;
 boolean linechange = false;
 
 String start_date = request.getParameter("date");
@@ -386,12 +386,12 @@ url = "?start_date="+start_date+"&plane="+plane +""+ url;
 try{
 	//DBMS¿¬°á
 	Class.forName("com.mysql.jdbc.Driver");
-	conn = DriverManager.getConnection("jdbc:mysql://localhost/kopoctc2?useSSL=false","id","yourpw");
+	conn = DriverManager.getConnection("jdbc:mysql://localhost/kopoctc2?useSSL=false","root","honor4me1241q@");
 	stmt = conn.createStatement();
 		
-		sql = "SELECT A.SEAT_NUM, B.SEAT_NUM, B.START_DATE, B.PLANE_NAME FROM "+plane+" A "+
+		sql = "SELECT A.SEAT_NUM, B.SEAT_NUM, B.START_DATE, B.PLANE_NAME FROM Go_KIMPO A "+
 			  "LEFT OUTER JOIN TICKETINFO B ON A.SEAT_NUM = B.SEAT_NUM "+
-			  "AND STR_TO_DATE(SUBSTRING(B.START_DATE,1,10),'%Y-%m-%d %H:%i:%s') = STR_TO_DATE('"+start_date+"','%Y-%m-%d %H:%i:%s') "+
+			  "AND STR_TO_DATE(SUBSTRING(B.START_DATE,1,10),'%Y-%m-%d %H:%i:%s') = STR_TO_DATE(now(),'%Y-%m-%d %H:%i:%s') "+
 			  "AND B.PLANE_NAME = '"+plane+"'"+
 			  "ORDER BY A.SEAT_NUM;";
 		int resved_seat[] = new int[100];
